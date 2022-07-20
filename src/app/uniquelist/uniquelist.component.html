@@ -1,0 +1,13 @@
+<div>
+    <input #itemValue id="item-input" #userName />
+      <input type="button" id="add-item" (click)="OnAdd(userName.value)" value="Add"/>
+       <input type="button" id="sort-item" value="sort" (click)="sort()" >
+       <input type="button" id="remove-item" value="remove" (click)="remove(userName.value)" >
+      <input type="button" id="clear-list">
+      <ul>
+        <li *ngFor="let user of itemInput">
+           {{user}}
+        </li>
+      </ul>
+    </div>
+    
